@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Energize Laboratories</title>
+	
+	<link rel="shortcut icon" href="../../images/Lightning.ico">
+	<link href="../../css/Reset.css" rel="stylesheet" type="text/css">
+	<link href="../../css/Basic.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+	<!-- Be sure to remove the nonScrollPage class from longer pages PLACE 1 of 3-->
+	<div class="BGrad">
+		<nav>
+			<ul>
+				<li> <a href="http://www.energizelaboratories.com" class="navHomeLink"> </a> </li> 
+				<li> <a href="../../" Title="Home"> Home </a> </li>
+				<li> <a href="../../about/" Title="About"> About </a> </li>
+				<li> <a href="../" Title="Projects"> Projects </a> </li>
+				<li> <a href="../../games/" Title="Games!"> Games! </a> </li>
+				<li> <a href="../../blog/" Title="Blog"> Blog </a> </li>
+			</ul>
+		</nav>
+		
+		<!-- Be sure to remove the nonScrollPage class from longer pages PLACE 2 of 3 -->
+		<div class="workingback">
+			<div class="logodiv">
+				<a href="index.html" > <img src="../../images/NewLogoSmall3.png" alt="Home" class="logo"/> </a>
+				<h3 class="phrase"> Energizing the Future! </h3>
+				<ul class="socialMediaButtons">
+					<li > <a href="http://www.facebook.com/EnergizeLabs" class="fbButton"> </a></li> 
+					<li ><a href="http://www.twitter.com/EnergizeLabs" class="twitButton"> </a></li>
+					<li ><a href="https://plus.google.com/106160860059188175530" rel="publisher"class="gplusButton" > </a></li>
+				</ul>
+			</div>
+			<h1 class="contentPageTitle">Jax, The Hopping Robot!</h1>
+			
+			<img src="./../../images/banners/contentpagebanners/JaxBanner.jpg" class="contentPageBanner" Title="" alt="Progression of Jax" />
+			
+			<div class="contentWrapper" style="height:7350px;">
+				
+				<h3 class="contentInternalHeadder" style="top:25px; left:480px;">Overview</h3>
+				
+				<p class="contentParagraph" style="top:75px; left:30px; width:1000px;">
+					Jax is a monoped hopping robot created as a Senior Design project for Columbia University’s Mechanical Engineering department. Jax, operates by actuating a pneumatic cylinder timed to resonance with its natural landing period to perform consistent consecutive hops. The purpose of research into monoped hopping designs is to branch into legged locomotion. After achieving untethered three-dimensional hopping, it would next be possible to approach two legged running or four legged running.
+					<br><br>
+					Jax’s design is a double-acting pneumatic cylinder that uses a solenoid valve to actuate the leg by evacuating the lower chamber. Its design stemmed in part from the research of Marc Raibert at the MIT Leg Lab where he researched legged locomotion before founding Boston Dynamics. Jax was controlled via a pacemaker type control system that actuated its leg with a delay time relative to sensing landing. It could also be controlled on a two-dimensional tether with a servo to control body angle.
+					<br><br>
+					From this project, we gathered a good deal of information on legged locomotion and have placed ourselves in a good place to move forward and achieve two-dimensional free motion with additional time to fine tune the control system.
+				</p>
+				
+				<h3 class="contentInternalHeadder" style="top:350px; left:490px;">Jax 1.0</h3>
+
+				<p class="contentParagraph" style="top:390px; left:30px; width:1000px;">
+					The earliest designs for Jax, were based heavily on a project called the <a href="https://www.youtube.com/watch?v=wvYthkpRFfk">Penn Jerboa.</a>  This robot made by engineering graduate students in the University of Pennslvania included two legs and a tail for stabilization.  We attempted to follow along their project, but in a deeper dive, looking into literature, we found Marc Raibert’s designs and decided to shift our focus due to the constrained time nature of the project. 
+				</p>
+				
+				
+				<div class="imageWrapper" style="position: absolute; top: 500px; left: 250px;">
+					<img src="../../images/jaximages/Jax1-1.png" Title="" alt="Jax 1.0 Main" style="height: 200px; width: 284px;">
+					<p class="contentImageCaption" style="width: 250px;">
+						Main View of Jax 1.0 preliminary design
+					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 500px; left: 575px;">
+					<img src="../../images/jaximages/Jax1-2.png" Title="" alt="Jax 1.0 Top" style="height: 200px; width: 219px;">
+					<p class="contentImageCaption" style="width: 200px;">
+						Top View of Jax 1.0 - Note the motors actuating the tail and legs
+					</p>
+				</div>
+				
+				<h3 class="contentInternalHeadder" style="top:760px; left:490px;">Jax 2.0</h3>
+
+				<p class="contentParagraph" style="top:800px; left:30px; width:1000px;">
+					Jax’s second iteration went into the monoped design.  Taking cues from Marc Reibert, we designed a leg that was mechanically actuated with a servo motor compressing a spring through a two-bar slider mechanism.  After running simulations and analyses on the setup, we found that given our weights and constraints, even with the strongest servo motors on the market, we still would not be able to achieve the lift for the hopping motion required.  Therefore, after talks with carious professors around the department, we decided to switch to a pneumatic design for the leg.
+					<br><br>
+					One thing to note is that we kept the overall setup the same from Jax 2 to Jax 3.  Only the actuation method of mechanical to pneumatics was changed.  We built and designed both a one-dimensional testing platform and a two-dimensional setup with rotating body.  The two dimensional setup was constrained to two dimensions with a long boom that simulated movement on a plane.  Ideally the body was supposed to rotate freely and the leg would dynamically balance while hopping.
+				</p>
+				
+				<div class="imageWrapper" style="position: absolute; top: 1030px; left: 130px;">
+					<img src="../../images/jaximages/1DPlat.png" Title="" alt="Testing Platform" style="height: 300px; width: 390px;">
+					<p class="contentImageCaption" style="width: 280px;">
+						The mechanically-actuated Jax leg design on the one-dimensional testing platform.
+					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 1030px; left: 550px;">
+					<img src="../../images/jaximages/2DPlat.png" Title="" alt="2D Boom" style="height: 300px; width: 369px;">
+					<p class="contentImageCaption" style="width: 280px;">
+						The 2D Boom dynamically stabilizing setup
+					</p>
+				</div>
+				
+				<h3 class="contentInternalHeadder" style="top:1400px; left:490px;">Jax 3.0</h3>
+				
+				<p class="contentParagraph" style="top:1450px; left:30px; width:1000px;">
+					The Jax 3.0 design was our final design and was pneumatically-actuated.  The primary issue was designing a frame around the pneumatic cylinder to protect it from bending moments when Jax would hop at an angle.  Because of this, I designed a triangular frame and foot to fit around the cylinder.  At the bottom of the triangular base, we had a rubber “toe” which is what Jax hopped on.  The toe was made out of a special mix of polyurethane usually used for molding artistic projects.  Instead, I designed a 3D-printed mold and used the polyurethane as the casting subject itself.  This gave a perfectly-shaped foot with a very nice rubber texture that wouldn’t slip when on the ground.
+					<br><br>
+					The Jax 3.0 was what we finally showed off at the Senior Design Expo on May 4, 2016.  Due to time constraints, the body was pinned in place and did not rotate freely because we were not able to design the control laws that would dynamically stabilize the leg in the hopping motion.  The project was a great success and drew a lot of attention.
+				</p>
+				
+				<div class="imageWrapper" style="position: absolute; top: 1660px; left: 130px;">
+					<img src="../../images/jaximages/JaxPneumatics.png" Title="" alt="Peumatics" style="height: 300px; width: 450px;">
+					<p class="contentImageCaption" style="width: 280px;">
+						Pneumatic diagram of the setup
+					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 1660px; left: 630px;">
+					<img src="../../images/jaximages/Jax3.png" Title="" alt="Jax3" style="height: 300px; width: 240px;">
+					<p class="contentImageCaption" style="width: 280px;">
+						Basic model of the support structure around the pneumatic cylinder.
+					</p>
+				</div>
+
+				<h3 class="contentInternalHeadder" style="top:2025px; left:490px;">Final Expo</h3>
+
+				<div class="imageWrapper" style="position: absolute; top: 2075px; left: 140px;">
+					<img src="../../images/jaximages/JaxPlat1Small.jpg" Title="" alt="" style="height: 600px; width: 800px;">
+					<p class="contentImageCaption" style="width: 750px;">
+						Final setup at the Engineering Expo
+ 					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 2720px; left: 140px;">
+					<img src="../../images/jaximages/JaxPlat2Small.jpg" Title="" alt="" style="height: 600px; width: 800px;">
+					<p class="contentImageCaption" style="width: 750px;">
+						Another angle.  Note the pneumatic equipment in the acrylic box we made in order to regulate the pressure.
+ 					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 3380px; left: 240px;">
+					<img src="../../images/jaximages/JaxFootSmall.jpg" Title="" alt="" style="height: 800px; width: 600px;">
+					<p class="contentImageCaption" style="width: 550px;">
+						A detail of the foot.  Note the Polyurethene toe molded in a 3D printed mold.  Also note the 3D printed support structures as well. 
+ 					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 4240px; left: 290px;">
+					<img src="../../images/jaximages/JaxGifSmall.gif" Title="" alt="" style="height: 889px; width: 500px;">
+					<p class="contentImageCaption" style="width: 400px;">
+						A shot of Jax in action!
+ 					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 5180px; left: 140px;">
+					<img src="../../images/jaximages/JaxMeSmall.jpg" Title="" alt="" style="height: 600px; width: 800px;">
+					<p class="contentImageCaption" style="width: 750px;">
+						Me holding Jax!
+ 					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 5820px; left: 140px;">
+					<img src="../../images/jaximages/JaxTeamSmall.jpg" Title="" alt="" style="height: 600px; width: 800px;">
+					<p class="contentImageCaption" style="width: 750px;">
+						Jax and the team (The Jaxon 5)!  From left to right: Rienzi Gokea, Andrew Vogel, Daniel Garcia, Diego Song, Steve Jaycox
+ 					</p>
+				</div>
+				
+				<div class="imageWrapper" style="position: absolute; top: 6470px; left: 140px;">
+					<img src="../../images/jaximages/JaxPosterSmall.jpg" Title="" alt="" style="height: 600px; width: 800px;">
+					<p class="contentImageCaption" style="width: 750px;">
+						The final poster with the 1D Jax and 2D Jax.
+ 					</p>
+				</div>
+				
+				<h3 class="contentInternalHeadder" style="top:7120px; left:490px;">Final Thoughts</h3>
+
+				<p class="contentParagraph" style="top:7180px; left:30px; width:1000px;">
+					Overall, the project was a pretty great success!  We learned a lot about mechanics and hopping robots and got a chance to make something that we will be proud of our entire lives.  We were sad that we didn’t have enough time to make Jax dynamically stable and possibly go into a 3D version of Jax that could move around the room.  Originally we were kicking around ideas of a swarm of Jaxons hopping together in sync and communicating together.  These are all great ideas that I want to try to accomplish in the following years. For now Jax will sit idle, but I hope to revisit the project sometime in the future.
+					<br><br>
+					For more info on Jax, our process and our designs, you can <a href="../../media/JaxReport.pdf" target="_blank"> download our report!</a>
+				</p>
+				
+				
+			</div>
+			<!-- Be sure to remove the nonScrollPage class from longer pages PLACE 3 of 3-->
+			<p class="bot"> Copyright 2014-2016 Energize Laboratories Inc. All Rights Reserved</p>
+		</div>
+		<br> <br> <br>
+	 </div>
+	
+
+
+
+</body>

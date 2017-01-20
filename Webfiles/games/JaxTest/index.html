@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Energize Laboratories</title>
+	
+	<link rel="shortcut icon" href="../../images/Lightning.ico">
+	<link href="../../css/Reset.css" rel="stylesheet" type="text/css">
+	<link href="../../css/Basic.css" rel="stylesheet" type="text/css">
+	
+	
+	<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+	<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+	</script>
+
+
+	<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+	</script>
+	<script type="text/javascript">
+		<!--
+			var config = {
+				width: 960, 
+				height: 600,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "JaxTest.unity3d");
+			});
+		-->
+	</script>
+	
+	
+	
+</head>
+<body>
+	<!-- Be sure to remove the nonScrollPage class from longer pages PLACE 1 of 3-->
+	<div class="BGrad">
+		<nav>
+			<ul>
+				<li> <a href="http://www.energizelaboratories.com" class="navHomeLink"> </a> </li> 
+				<li> <a href="../../" Title="Home"> Home </a> </li>
+				<li> <a href="../../about/" Title="About"> About </a> </li>
+				<li> <a href="../../projects/" Title="Projects"> Projects </a> </li>
+				<li> <a href="../" Title="Games!"> Games! </a> </li>
+				<li> <a href="../../blog/" Title="Blog"> Blog </a> </li>
+			</ul>
+		</nav>
+		
+		<!-- Be sure to remove the nonScrollPage class from longer pages PLACE 2 of 3 -->
+		<div class="workingback">
+			<div class="logodiv">
+				<a href="index.html" > <img src="../../images/NewLogoSmall3.png" alt="Home" class="logo"/> </a>
+				<h3 class="phrase"> Energizing the Future! </h3>
+				<ul class="socialMediaButtons">
+					<li > <a href="http://www.facebook.com/EnergizeLabs" class="fbButton"> </a></li> 
+					<li ><a href="http://www.twitter.com/EnergizeLabs" class="twitButton"> </a></li>
+					<li ><a href="https://plus.google.com/106160860059188175530" rel="publisher"class="gplusButton" > </a></li>
+				</ul>
+			</div>
+			<h1 class="contentPageTitle">Energize Sparq</h1>
+			
+			<div class="contentWrapper" style="height:935px;">
+				
+				<h3 class="contentInternalHeadder" style="top:25px; left:490px;">Controls</h3>
+				
+				<p class="contentParagraph" style="top:75px; left:135px; width:800px; text-align:center;">
+					Conrols: Space to Extend Spring, A and D to rotate foot
+					<br>
+					You can add a force nudge using left and right arrow keys
+					<br>
+					Increase force nudge with up and down arrow keys
+					<br>
+					R to reset scene.  Automatic control not implemented yet.
+				</p>
+				
+				<div class="content" id="">
+					<div id="unityPlayer" style="height: 600px; width: 960px; position:absolute; top:175px; left:55px;">
+						<div class="missing">
+							<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+							<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--
+				<h3 class="contentInternalHeadder" style="top:800px; left:500px;">About</h3>
+				
+				<p class="contentParagraph" style="top:845px; left:135px; width:800px;">
+					Energize Sparq is a small game developed in about 16 hours over the course of HackDuke.  The game is unfinished, but has its gameplay down.  More Information and background regarding the game will be out shortly.
+				</p>
+				-->
+				
+				
+			</div>
+			<!-- Be sure to remove the nonScrollPage class from longer pages PLACE 3 of 3-->
+			<p class="bot"> Copyright 2014-2015 Energize Laboratories Inc. All Rights Reserved</p>
+		</div>
+		<br> <br> <br>
+	 </div>
+	
+
+
+
+</body>
