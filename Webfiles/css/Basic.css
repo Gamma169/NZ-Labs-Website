@@ -731,6 +731,17 @@ a:hover {
 	z-index:3
 }
 
+#epsilonJump {
+	height:600px;
+	width:960px;
+	
+	position: absolute;
+	top: 175px;
+	left: 55px;
+	
+	z-index:3;
+}
+
 #form {
 	background:clear;
 
